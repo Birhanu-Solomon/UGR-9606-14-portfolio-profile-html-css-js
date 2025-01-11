@@ -10,32 +10,28 @@ body {
 
 h1 {
   text-align: center;
-  margin: 1em auto 0.5em;
+  margin-top: 1em;
   font-size: 2rem;
   color: #333;
 }
 
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+p {
   margin: 1em auto;
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 0 1em;
 }
 
-div img {
-  width: 150px;
+img {
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin: 1em auto;
   border-radius: 8px;
 }
 
-div p {
-  margin-top: 0.5em;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .navigation {
-  background-color: #333;
+  background: url(../images/headerback.webp);
   padding: 0.5em 0;
 }
 
@@ -62,7 +58,7 @@ div p {
 }
 
 footer {
-  background-color: #333;
+  background: url(../images/headerback.webp);
   color: white;
   text-align: center;
   padding: 1em;
@@ -85,11 +81,7 @@ footer nav ul li {
     font-size: 1.5rem;
   }
 
-  div img {
-    width: 120px;
-  }
-
-  div p {
+  p {
     font-size: 0.9rem;
   }
 
@@ -109,12 +101,9 @@ footer nav ul li {
     font-size: 1.8rem;
   }
 
-  div img {
-    width: 140px;
-  }
-
-  div p {
+  p {
     font-size: 1rem;
+    padding: 0 1.5em;
   }
 
   .navigation ul {
@@ -129,17 +118,9 @@ footer nav ul li {
     font-size: 2rem;
   }
 
-  div {
-    flex-direction: row;
-    gap: 1em;
-  }
-
-  div img {
-    width: 150px;
-  }
-
-  div p {
+  p {
     font-size: 1.1rem;
+    padding: 0 2em;
   }
 
   .navigation ul {
@@ -154,12 +135,9 @@ footer nav ul li {
     font-size: 2.2rem;
   }
 
-  div img {
-    width: 180px;
-  }
-
-  div p {
+  p {
     font-size: 1.2rem;
+    padding: 0 3em;
   }
 
   .navigation ul {

@@ -9,7 +9,7 @@ body {
 }
 
 .navigation {
-  background-color: #333;
+  background: url(../images/headerback.webp);
   padding: 0.5em 0;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 footer {
-  background-color: #333;
+  background: url(../images/headerback.webp);
   color: white;
   text-align: center;
   padding: 1em;
