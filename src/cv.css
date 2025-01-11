@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em auto 0.5em;
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  margin: 1em auto;
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 0 1em;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 1em auto;
+  padding: 0;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+ul img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+ul li {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.navigation {
+  background-color: #333;
+  padding: 0.5em 0;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  margin: 0 1em;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.navigation ul li a:hover {
+  color: #00bcd4;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  margin: 0.5em 0;
+}
+
+/* Responsive Design */
+
+/* Mobile Landscape */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    gap: 0.5em;
+  }
+
+  ul img {
+    width: 60px;
+    height: 60px;
+  }
+
+  ul li {
+    font-size: 0.8rem;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation ul li {
+    margin: 0.5em 0;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 1.5em;
+  }
+
+  ul {
+    gap: 0.8em;
+  }
+
+  ul img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .navigation ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    padding: 0 2em;
+  }
+
+  ul {
+    gap: 1em;
+  }
+
+  ul img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .navigation ul {
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 0 3em;
+  }
+
+  ul {
+    gap: 1.5em;
+  }
+
+  ul img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .navigation ul {
+    justify-content: space-evenly;
+  }
+}
